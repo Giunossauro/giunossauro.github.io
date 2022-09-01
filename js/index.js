@@ -36,35 +36,20 @@ document.addEventListener("scroll", () => {
   elements.forEach(([element, yPosition]) => zIndexer(element, yPosition));
 });
 
-const myInit = {
-  method: 'POST',
-  mode: 'cors',
-  headers: {
-    "Content-Type": "application/json",
-    "accept": "*/*",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive"
-  },
-  body: {
-    "nome": nome.value,
-    "email": email.value,
-    "tel": tel.value,
-    "msg": msg.value
-  }
-};
-
 
 const postar = () => {
-  fetch("https://servidorcontato.herokuapp.com/contatos", myInit)
-  .then((res1) => {
-    console.log(res1);
-    return res1;
+  fetch("https://servidorcontato.herokuapp.com/contatos", {
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": JSON.stringify({
+      "nome": "nomesss3",
+      "email": "giu3@masssil.com",
+      "tel": "11131131sss1",
+      "msg": "lfali3alsijsssali saliasjdl"
+    })
   })
-  .then((res2) => {
-    console.log(res2);
-    return res2;
-  })
-  .catch((e) => {
-    console.log(e);
-  })
+  .then((res) => console.log("res: ", res))
+  .catch((e) => console.log("erro: ", e));
 }

@@ -606,7 +606,7 @@
     <hr class="border border-1 opacity-50">
     <section id="contato" class="mb-5 pb-5">
       <h1 class="display-4 fs-2 mb-5">Contato</h1>
-      <form class="container" onsubmit="postar()">
+      <form class="container" method="post" onsubmit="postar()">
         <div id="form-nome" class="mb-3">
           <label for="nome" class="form-label">Nome</label>
           <input type="text" maxlength="60" class="form-control" id="nome" required/>
@@ -633,7 +633,7 @@
           ></textarea>
         </div>
         <button
-          type="submit" class="btn btn-dark btn-outline-light" id="submit"
+          type="button" class="btn btn-dark btn-outline-light" id="submit"
         >Submit</button>
       </form>
     </section>
@@ -672,7 +672,7 @@
   </footer>
   <img
     src="/img/Giu.svg"
-    alt="dadsadsaf"
+    alt="moldura não carregada"
     srcset="/img/Giu.svg"
     id="moldura"
   >
