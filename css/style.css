@@ -34,11 +34,27 @@ body {
 }
 
 .navbar-nav {
-  font-size: 2vw !important
+  font-size: calc(1rem + 1vw);
 }
 
 .navbar-nav li {
   padding-right: .5vw;
+}
+
+.show {
+  background-color: #282828dd;
+  border-radius: 5%;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.show ul {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+.show li:not(:last-child) {
+  border-bottom: 1px solid black;
 }
 
 .nav-link {
