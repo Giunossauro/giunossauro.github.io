@@ -36,20 +36,26 @@ document.addEventListener("scroll", () => {
   elements.forEach(([element, yPosition]) => zIndexer(element, yPosition));
 });
 
-
-const postar = () => {
-  fetch("https://servidorcontato.herokuapp.com/contatos", {
-    "method": "POST",
-    "headers": {
-      "Content-Type": "application/json"
-    },
-    "body": JSON.stringify({
-      "nome": "nomesss3",
-      "email": "giu3@masssil.com",
-      "tel": "11131131sss1",
-      "msg": "lfali3alsijsssali saliasjdl"
-    })
+const postar = () => fetch("https://servidorcontato.herokuapp.com/contatos", {
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": JSON.stringify({
+    "nome": nome.value,
+    "email": email.value,
+    "tel": tel.value,
+    "msg": msg.value
   })
-  .then((res) => console.log("res: ", res))
-  .catch((e) => console.log("erro: ", e));
-}
+})
+.then((_) => {
+  nome.value = "";
+  email.value = "";
+  tel.value = "";
+  msg.value = "";
+  alert("Mensagem enviada com sucesso!");
+})
+.catch((_) => alert(
+  "algo deu errado ao enviar os dados. Favor falar com Giuliano pelo WhatsApp: ",
+  "(11) 94235-7682, ou pelo e-mail: giuandroide@gmail.com. Obrigado!"
+));
