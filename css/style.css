@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+* {
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: auto;
+  width: auto;
+}
+
+body {
+  height: auto;
+  width: auto;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffffe2;
+  background-image: linear-gradient(to top left, #282828,#121212);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.navbar {
+  padding-left: 15vw;
+  padding-right: 5vw;
+  width: 100vw;
+}
+
+.navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-nav {
+  font-size: 2vw !important
+}
+
+.navbar-nav li {
+  padding-right: .5vw;
+}
+
+.nav-link {
+  color: #ffffffe2 !important;
+  font-size: 1.1em !important;
+}
+
+.navbar-nav {
+  width: 80%;
+  min-width: 80%;
+  justify-content: space-evenly;
+}
+
+main {
+  margin-left: 6vw !important;
+}
+
+hr {
+  margin-top: 6vw !important;
+  margin-bottom: 6vw !important;
+}
+
+.espaco-abaixo {
+  padding-top: calc(15vmin - 2.5vh);
+}
+
+.border-1 {
+  border-color: #ffffff99 !important;
+}
+
+article {
+  padding-bottom: 1rem;
+}
+
+.icon {
+  max-width: 100%;
+}
+
+form, footer {
+  display: grid;
+  justify-items: center;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+label {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-toggler {
+  margin-top: 5vw;
+  background-color: #404040;
+  opacity: 75%;
+}
+
+form > input {
+  width: 20vw !important;
+}
+
+form > button {
+  padding-top: .1vw !important;
+  padding-bottom: .1vw !important;
+}
+
+.card.h-100 {
+  width: 18rem;
+}
+
+.btn-close {
+  margin-left: 0;
+}
+
+.modal-content {
+  background-color: #121212 !important;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+.modal-header, .modal-footer {
+  border-color: #fff1 !important;
+}
+
+.card-title {
+  padding-bottom: 2.5%;
+}
+
+.display-4 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.card-body {
+  text-align: justify;
+}
+
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #121212;
+}
+
+.card-img-top {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-floating {
+  z-index: 3;
+  cursor: pointer;
+}
+
+.container-fluid {
+  justify-content: end !important;
+}
+
+#contato {
+  margin-left: -6vw !important;
+}
+
+#moldura {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-width: 100%;
+  z-index: 2;
+}
