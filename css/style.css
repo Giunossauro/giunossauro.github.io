@@ -68,7 +68,7 @@ body {
   justify-content: space-evenly;
 }
 
-main {
+main, footer > section  {
   margin-left: 6vw !important;
 }
 
@@ -107,10 +107,6 @@ footer {
 
 footer > div {
   margin-left: 9.5vw;
-}
-
-footer > section {
-  margin-left: 6vw;
 }
 
 footer > div, footer > section {
