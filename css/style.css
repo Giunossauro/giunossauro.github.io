@@ -106,7 +106,7 @@ footer {
 }
 
 footer > div {
-  margin-left: 9.5vw;
+  margin-left: 9.5vw !important;
 }
 
 footer > div, footer > section {
