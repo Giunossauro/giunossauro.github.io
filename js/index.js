@@ -44,7 +44,7 @@ const postar = () => fetch("https://servidorcontato.herokuapp.com/contatos", {
   "body": JSON.stringify({
     "nome": nome.value,
     "email": email.value,
-    "tel": tel.value,
+    "tel": tel.value.replace("(",'').replace(")",'').replace("-",''),
     "msg": msg.value
   })
 })
