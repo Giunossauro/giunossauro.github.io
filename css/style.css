@@ -102,14 +102,13 @@ footer {
   position: absolute;
   left: 0;
   width: 100%;
-  z-index: 1;
 }
 
 footer > div {
   padding: 2vw 0 1vw 6vw !important;
 }
 
-footer > div, footer > section {
+footer > div, footer > section, h4 {
   z-index: 3;
 }
 
