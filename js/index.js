@@ -11,6 +11,7 @@ const elements = [
   [document.getElementById("sobre-icons"), 107],
   [document.getElementById("sobre-experiencia"), 174],
   ...[1, 2, 3, 4, 5, 6].map(e => [document.getElementById(`sobre-li-${e}`), 145]),
+  [document.getElementById("sobre-curriculo"), 74],
   [document.getElementById("projetos-nome"), 74],
   ...cardsIdNumbers.map(e => [document.getElementById(`card-img-${e}`), 144]),
   ...cardsIdNumbers.map(e => [document.getElementById(`card-title-${e}`), 134]),
