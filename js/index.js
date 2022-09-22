@@ -60,3 +60,5 @@ const postar = () => fetch("https://servidorcontato.herokuapp.com/contatos", {
   "algo deu errado ao enviar os dados. Favor falar com Giuliano pelo WhatsApp: ",
   "(11) 94235-7682, ou pelo e-mail: giuandroide@gmail.com. Obrigado!"
 ));
+
+fetch("https://servidorcontato.herokuapp.com/portfoliovisits");
