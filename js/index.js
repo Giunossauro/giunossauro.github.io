@@ -45,20 +45,70 @@ const postar = () => fetch("https://servidorcontato.herokuapp.com/contatos", {
   "body": JSON.stringify({
     "nome": nome.value,
     "email": email.value,
-    "tel": tel.value.replace("(",'').replace(")",'').replace("-",'').replace(" ",''),
+    "tel": tel.value.replace("(", '').replace(")", '').replace("-", '').replace(" ", ''),
     "msg": msg.value
   })
 })
-.then((_) => {
-  nome.value = "";
-  email.value = "";
-  tel.value = "";
-  msg.value = "";
-  alert("Mensagem enviada com sucesso!");
-})
-.catch((_) => alert(
-  "algo deu errado ao enviar os dados. Favor falar com Giuliano pelo WhatsApp: ",
-  "(11) 94235-7682, ou pelo e-mail: giuandroide@gmail.com. Obrigado!"
-));
+  .then((_) => {
+    nome.value = "";
+    email.value = "";
+    tel.value = "";
+    msg.value = "";
+    alert("Mensagem enviada com sucesso!");
+  })
+  .catch((_) => alert(
+    "algo deu errado ao enviar os dados. Favor falar com Giuliano pelo WhatsApp: ",
+    "(11) 94235-7682, ou pelo e-mail: giuandroide@gmail.com. Obrigado!"
+  ));
 
 fetch("https://servidorcontato.herokuapp.com/portfoliovisits");
+
+// Acordando e mantendo acordado os dynos do Heroku
+// para que a visita ao site não demore para carregar
+
+fetch("https://guess-who-pokemon.herokuapp.com/")
+
+const timeouts = [];
+
+timeouts.push(setTimeout(() => {
+  fetch("https://mega-crud-com-json.herokuapp.com/");
+}, 900));
+
+timeouts.push(setTimeout(() => {
+  fetch("https://json-server-do-mega-crud.herokuapp.com/");
+}, 1800));
+
+timeouts.push(setTimeout(() => {
+  fetch("https://crud-com-json.herokuapp.com/");
+}, 2700));
+
+timeouts.push(setTimeout(() => {
+  fetch("https://servidorcontato.herokuapp.com/");
+}, 3600));
+
+clearTimeout(timeouts.pop());
+clearTimeout(timeouts.pop());
+clearTimeout(timeouts.pop());
+clearTimeout(timeouts.pop());
+
+//---
+
+setInterval(() => {
+  fetch("https://guess-who-pokemon.herokuapp.com/");
+}, 45000);
+
+setInterval(() => {
+  fetch("https://mega-crud-com-json.herokuapp.com/");
+}, 54000);
+
+setInterval(() => {
+  fetch("https://json-server-do-mega-crud.herokuapp.com/");
+}, 63000);
+
+setInterval(() => {
+  fetch("https://crud-com-json.herokuapp.com/");
+}, 72000);
+
+setInterval(() => {
+  fetch("https://servidorcontato.herokuapp.com/");
+}, 81000);
