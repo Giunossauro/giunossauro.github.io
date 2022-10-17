@@ -86,11 +86,6 @@ timeouts.push(setTimeout(() => {
   fetch("https://servidorcontato.herokuapp.com/");
 }, 3600));
 
-clearTimeout(timeouts.pop());
-clearTimeout(timeouts.pop());
-clearTimeout(timeouts.pop());
-clearTimeout(timeouts.pop());
-
 //---
 
 setInterval(() => {
